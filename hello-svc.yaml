@@ -5,7 +5,6 @@ metadata:
     app.openshift.io/vcs-ref: ""
     app.openshift.io/vcs-uri: https://github.com/jacky9999999/demo.git
     openshift.io/generated-by: OpenShiftWebConsole
-  creationTimestamp: "2022-01-11T03:47:38Z"
   labels:
     app: hello
     app.kubernetes.io/component: hello
@@ -16,8 +15,6 @@ metadata:
     app.openshift.io/runtime-version: openjdk-11-el7
   name: hello
   namespace: demo
-  resourceVersion: "19734801"
-  uid: fe31ad3c-0c60-40ad-81e4-17be33627006
 spec:
   clusterIP: 10.105.164.115
   clusterIPs:
@@ -43,5 +40,3 @@ spec:
     deploymentconfig: hello
   sessionAffinity: None
   type: ClusterIP
-status:
-  loadBalancer: {}

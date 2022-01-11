@@ -5,8 +5,6 @@ metadata:
     app.openshift.io/vcs-ref: ""
     app.openshift.io/vcs-uri: https://github.com/jacky9999999/demo.git
     openshift.io/generated-by: OpenShiftWebConsole
-  creationTimestamp: "2022-01-11T03:47:38Z"
-  generation: 1
   labels:
     app: hello
     app.kubernetes.io/component: hello
@@ -16,18 +14,6 @@ metadata:
     app.openshift.io/runtime: java
     app.openshift.io/runtime-version: openjdk-11-el7
   name: hello
-  namespace: demo
-  resourceVersion: "19742518"
-  uid: 2faf541f-9f7c-4f94-80f3-55b83df439f6
 spec:
   lookupPolicy:
     local: false
-status:
-  dockerImageRepository: image-registry.openshift-image-registry.svc:5000/demo/hello
-  tags:
-  - items:
-    - created: "2022-01-11T03:51:41Z"
-      dockerImageReference: image-registry.openshift-image-registry.svc:5000/demo/hello@sha256:73e00214f420c08ebf181456c21d973ec3581f6d43bced3c556f12855f13f581
-      generation: 1
-      image: sha256:73e00214f420c08ebf181456c21d973ec3581f6d43bced3c556f12855f13f581
-    tag: latest
