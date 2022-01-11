@@ -38,7 +38,7 @@ spec:
         deploymentconfig: hello
     spec:
       containers:
-      - image: image-registry.openshift-image-registry.svc:5000/demo/hello@sha256:e8897a4ea723f63aa4484ed6f8e8952bab6a45cf44659a5d41f3356ea64d4d29
+      - image: image-registry.openshift-image-registry.svc:5000/demo/hello:latest
         imagePullPolicy: Always
         name: hello
         ports:
@@ -66,6 +66,5 @@ spec:
         kind: ImageStreamTag
         name: hello:latest
         namespace: demo
-      lastTriggeredImage: image-registry.openshift-image-registry.svc:5000/demo/hello@sha256:e8897a4ea723f63aa4484ed6f8e8952bab6a45cf44659a5d41f3356ea64d4d29
     type: ImageChange
   - type: ConfigChange
