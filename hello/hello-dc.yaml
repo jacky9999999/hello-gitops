@@ -3,7 +3,7 @@ kind: DeploymentConfig
 metadata:
   annotations:
     app.openshift.io/vcs-ref: ""
-    app.openshift.io/vcs-uri: https://github.com/jacky9999999/demo.git
+    app.openshift.io/vcs-uri: https://github.com/jacky9999999/hello.git
     openshift.io/generated-by: OpenShiftWebConsole
   labels:
     app: hello
@@ -38,7 +38,7 @@ spec:
         deploymentconfig: hello
     spec:
       containers:
-      - image: image-registry.openshift-image-registry.svc:5000/demo/hello@sha256:73e00214f420c08ebf181456c21d973ec3581f6d43bced3c556f12855f13f581
+      - image: image-registry.openshift-image-registry.svc:5000/demo/hello@sha256:e8897a4ea723f63aa4484ed6f8e8952bab6a45cf44659a5d41f3356ea64d4d29
         imagePullPolicy: Always
         name: hello
         ports:
@@ -66,6 +66,6 @@ spec:
         kind: ImageStreamTag
         name: hello:latest
         namespace: demo
-      lastTriggeredImage: image-registry.openshift-image-registry.svc:5000/demo/hello@sha256:73e00214f420c08ebf181456c21d973ec3581f6d43bced3c556f12855f13f581
+      lastTriggeredImage: image-registry.openshift-image-registry.svc:5000/demo/hello@sha256:e8897a4ea723f63aa4484ed6f8e8952bab6a45cf44659a5d41f3356ea64d4d29
     type: ImageChange
   - type: ConfigChange
