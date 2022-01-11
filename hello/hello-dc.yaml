@@ -38,7 +38,7 @@ spec:
         deploymentconfig: hello
     spec:
       containers:
-      - image: image-registry.openshift-image-registry.svc:5000/demo/hello:latest
+      - image: image-registry.openshift-image-registry.svc:5000/demo/hello@sha256:fbd6eb985f08a5aaedce903b3300407bcc4a3d50f8f7f970c48a46537000114d
         imagePullPolicy: Always
         name: hello
         ports:
