@@ -15,7 +15,7 @@ metadata:
     app.openshift.io/runtime-version: openjdk-11-el7
   name: hello
 spec:
-  replicas: 2
+  replicas: 5
   revisionHistoryLimit: 10
   selector:
     app: hello
